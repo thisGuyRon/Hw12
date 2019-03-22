@@ -86,8 +86,7 @@ function optionChanged(newSample) {
 var pieChart = d3.select("#pie");
   var bubbleChart = d3.select("#bubble");
   pieChart.selectAll("svg").remove();
-  //pieChart.html("");
-  //bubbleChart.html("");
+  //call functions to load plots
   buildCharts(newSample);
   buildMetadata(newSample);
   console.log("option changed");
