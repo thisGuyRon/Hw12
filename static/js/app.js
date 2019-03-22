@@ -33,6 +33,7 @@ function buildCharts(sample) {
     console.log(ds_otu_ids);
     console.log(ds_otu_labels);
     console.log(response.sample_values);
+    // setup data in dictionary
     data = [{
       "labels": ds_otu_ids,
       "values": ds_sample_values,
