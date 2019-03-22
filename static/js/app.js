@@ -22,7 +22,7 @@ function buildCharts(sample) {
     console.log("called build charts successful");
     var url = "/samples/" + sample;
     d3.json(url).then(function(response){
-
+    //test response capture
     console.log(response);
     var ds_sample_values = response.sample_values.slice(0,10);
     var ds_otu_ids = response.otu_ids.slice(0,10);
