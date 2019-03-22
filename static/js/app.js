@@ -1,6 +1,6 @@
 function buildMetadata(sample) {
 
-  // @TODO: Complete the following function that builds the metadata panel
+  // function to build meta data
     var url = "/metadata/" + sample;
     var metaBody = d3.select("#sample-metadata");
     metaBody.html("");
@@ -48,7 +48,7 @@ function buildCharts(sample) {
       "hoverinfo": ds_otu_labels,
       "type":"pie"
     }];
-    Plotly.plot("pie", data);
+    Plotly.newPlot("pie", data);
     data2 = [{
       "x": response.otu_ids,
       "y": response.sample_values,
@@ -60,7 +60,7 @@ function buildCharts(sample) {
       }
        
     }]
-    Plotly.plot("bubble", data2);
+    Plotly.newPlot("bubble", data2);
 
   })
 
