@@ -53,6 +53,7 @@ function buildCharts(sample) {
       }
        
     }]
+    //plot data to bubble chart tag
     Plotly.newPlot("bubble", data2);
 
   })
