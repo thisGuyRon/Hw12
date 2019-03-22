@@ -40,6 +40,7 @@ function buildCharts(sample) {
       "hoverinfo": ds_otu_labels,
       "type":"pie"
     }];
+    //plot data to pie chart tag
     Plotly.newPlot("pie", data);
     data2 = [{
       "x": response.otu_ids,
