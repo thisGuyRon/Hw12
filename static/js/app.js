@@ -28,10 +28,10 @@ function buildCharts(sample) {
     var ds_sample_values = response.sample_values.slice(0,10);
     var ds_otu_ids = response.otu_ids.slice(0,10);
     var ds_otu_labels = response.otu_labels.slice(0,10);
+    //logt data capture
     console.log(ds_sample_values);
     console.log(ds_otu_ids);
     console.log(ds_otu_labels);
-    console.log("checkpoint#4");
     console.log(response.sample_values);
     data = [{
       "labels": ds_otu_ids,
