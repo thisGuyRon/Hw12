@@ -24,6 +24,7 @@ function buildCharts(sample) {
     d3.json(url).then(function(response){
     //test response capture
     console.log(response);
+    //slice ten data points
     var ds_sample_values = response.sample_values.slice(0,10);
     var ds_otu_ids = response.otu_ids.slice(0,10);
     var ds_otu_labels = response.otu_labels.slice(0,10);
