@@ -18,12 +18,7 @@ function buildMetadata(sample) {
 
 function buildCharts(sample) {
 
-  // @TODO: Use `d3.json` to fetch the sample data for the plots
-    //Plotly.deleteTraces("pie", 0);
-  //  var pieChart = d3.select("#pie");
-  //var bubbleChart = d3.select("#bubble");
-  //pieChart.html("");
-  //bubbleChart.html("");
+//code to call for charts
     console.log("called build charts successful");
     var url = "/samples/" + sample;
     d3.json(url).then(function(response){
