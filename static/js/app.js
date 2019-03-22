@@ -14,10 +14,6 @@ function buildMetadata(sample) {
       });
     })
 
-
-
-    // BONUS: Build the Gauge Chart
-    // buildGauge(data.WFREQ);
 }
 
 function buildCharts(sample) {
