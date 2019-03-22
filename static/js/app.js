@@ -11,7 +11,6 @@ function buildMetadata(sample) {
         var row = metaBody.append("tr");
         var cell = row.append("td");
         cell.text(key + ": " + value);
-        //use key and value here
       });
     })
 
